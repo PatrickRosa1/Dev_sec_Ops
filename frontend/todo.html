@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+    <button class="theme-toggle">🌙</button>
+    
+    <div class="todo-container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+            <div class="user-info">
+                <span id="welcomeUser"></span>
+                <button id="logoutBtn">Sair</button>
+            </div>
+        </header>
+        
+        <button id="addAdvancedTaskBtn">+ Tarefa Avançada</button>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Pesquisar tarefas...">
+            <button id="searchBtn">Pesquisar</button>
+        </div>
+        
+        <div class="add-task">
+            <input type="text" id="newTaskInput" placeholder="Nova tarefa...">
+            <button id="addTaskBtn">Adicionar</button>
+        </div>
+        
+        <div class="filter-buttons">
+            <button id="allTasksBtn" class="active">Todas</button>
+            <button id="activeTasksBtn">Ativas</button>
+            <button id="completedTasksBtn">Concluídas</button>
+        </div>
+        
+        <ul id="taskList"></ul>
+    </div>
+    
+    <script src="js/todo.js"></script>
+</body>
+</html>

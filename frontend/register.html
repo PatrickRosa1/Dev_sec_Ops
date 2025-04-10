@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Cadastro</h1>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="regUsername">Usuário (mínimo 4 caracteres)</label>
+                <input type="text" id="regUsername" required minlength="4">
+            </div>
+            <div class="input-group">
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" required>
+            </div>
+            <div class="input-group">
+                <label for="regPassword">Senha (mínimo 6 caracteres)</label>
+                <input type="password" id="regPassword" required minlength="6">
+            </div>
+            <div class="input-group">
+                <label for="regConfirmPassword">Confirmar Senha</label>
+                <input type="password" id="regConfirmPassword" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+            <p id="regErrorMessage" class="error-message"></p>
+            <p class="login-link">Já tem uma conta? <a href="index.html">Faça login</a></p>
+        </form>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>
